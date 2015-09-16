@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/feed_button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/_feed"
+        android:textColor="@android:color/white"
+        android:contentDescription="@string/_feed"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/exercise_button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/feed_button"
+        android:layout_below="@+id/feed_button"
+        android:text="@string/_exercise"
+        android:textColor="@android:color/white"
+        android:contentDescription="@string/_exercise"
+        android:onClick="onClick"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/wash_button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/exercise_button"
+        android:layout_below="@+id/exercise_button"
+        android:text="@string/_wash"
+        android:textColor="@android:color/white"
+        android:contentDescription="@string/_wash"
+        android:onClick="onClick"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/weigh_button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/wash_button"
+        android:layout_below="@+id/wash_button"
+        android:text="@string/_weigh"
+        android:textColor="@android:color/white"
+        android:contentDescription="@string/_weigh"
+        android:onClick="onClick"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/trim_button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/weigh_button"
+        android:layout_below="@+id/weigh_button"
+        android:text="@string/_trim"
+        android:textColor="@android:color/white"
+        android:contentDescription="@string/_trim"
+        android:onClick="onClick"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/medicate_button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/weigh_button"
+        android:layout_below="@+id/trim_button"
+        android:text="@string/_medicate"
+        android:textColor="@android:color/white"
+        android:contentDescription="@string/_medicate"
+        android:onClick="onClick"
+        android:layout_marginTop="10dp" />
+
+        <requestFocus />
+
+</RelativeLayout>
+
